@@ -1,0 +1,30 @@
+{
+  "name": "cloudtts-samples",
+  "version": "1.0.0",
+  "description": "A script that creates Text-to-Speech (TTS) audio files utilizing various cloud TTS providers and their respective voices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --env-file=.\\\\.env .\\\\index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark05e/CloudTTS-samples.git"
+  },
+  "keywords": [
+    "cloud-tts",
+    "aws",
+    "gcp",
+    "azure",
+    "ivr",
+    "tts"
+  ],
+  "author": "mark05E",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mark05e/CloudTTS-samples/issues"
+  },
+  "homepage": "https://github.com/mark05e/CloudTTS-samples#readme",
+  "dependencies": {
+    "cloud-text-to-speech": "^1.0.3"
+  }
+}
