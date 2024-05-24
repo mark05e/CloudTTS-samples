@@ -4,7 +4,8 @@
   "description": "A script that creates Text-to-Speech (TTS) audio files utilizing various cloud TTS providers and their respective voices.",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file=.\\\\.env .\\\\index.js"
+    "start": "node --env-file=.\\\\.env .\\\\index.js",
+    "extract-voice-data": "node --env-file=.\\\\.env .\\\\extractVoiceMetadata.js"
   },
   "repository": {
     "type": "git",
