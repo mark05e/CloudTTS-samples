@@ -8,3 +8,4 @@ A script that creates Text-to-Speech (TTS) audio files utilizing various cloud T
 - https://github.com/Wurielle/izabela-desktop/blob/master/guides/matts.md
 - https://github.com/Wurielle/izabela-desktop/blob/master/guides/iwtts.md
 - https://learn.microsoft.com/en-us/azure/ai-services/speech-service/releasenotes?tabs=text-to-speech
+- https://tabulator.info/examples/6.2
