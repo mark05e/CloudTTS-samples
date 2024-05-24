@@ -4,7 +4,7 @@
   "description": "A script that creates Text-to-Speech (TTS) audio files utilizing various cloud TTS providers and their respective voices.",
   "main": "index.js",
   "scripts": {
-    "test": "node --env-file=.\\\\.env .\\\\index.js"
+    "start": "node --env-file=.\\\\.env .\\\\index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,6 @@
   "homepage": "https://github.com/mark05e/CloudTTS-samples#readme",
   "dependencies": {
     "cloud-text-to-speech": "^1.0.3"
-  }
+  },
+  "type":"module"
 }
