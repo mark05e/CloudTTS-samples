@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node --env-file=.\\\\.env .\\\\index.js",
-    "extract-voice-data": "node --env-file=.\\\\.env .\\\\extractVoiceMetadata.js"
+    "extract-voice-metadata": "node --env-file=.\\\\.env .\\\\extractVoiceMetadata.js"
   },
   "repository": {
     "type": "git",
