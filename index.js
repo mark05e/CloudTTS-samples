@@ -7,7 +7,7 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
 
 // Setup cache file path
 const CACHE_DIR = path.resolve('_cache');
-const CACHE_PATH = path.join(CACHE_DIR, `voicesCache-${process.env.MICROSOFT_REGION}.json`);
+const CACHE_PATH = path.join(CACHE_DIR, `voicesCache-${process.env.PROVIDER}-${process.env.MICROSOFT_REGION}.json`);
 
 // Ensure the cache directory exists
 if (!fs.existsSync(CACHE_DIR)) {
@@ -33,7 +33,7 @@ TtsUniversal.init({
   const englishVoices = voices.filter((voice) => voice.locale.code.startsWith('en-'));
 
   // Define the output directory
-  const providerName = 'microsoft';
+  const providerName = process.env.PROVIDER;
   const outputDir = path.join('samples', providerName);
 
   // Create the output directory if it doesn't exist
