@@ -4,7 +4,16 @@ import readline from 'readline';
 import { TtsUniversal, TtsProviders, TtsParamsUniversal, AudioOutputFormatUniversal } from 'cloud-text-to-speech';
 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
-const CACHE_PATH = path.resolve(`voicesCache-${process.env.MICROSOFT_REGION}.json`);
+
+// Setup cache file path
+const CACHE_DIR = path.resolve('_cache');
+const CACHE_PATH = path.join(CACHE_DIR, `voicesCache-${process.env.MICROSOFT_REGION}.json`);
+
+// Ensure the cache directory exists
+if (!fs.existsSync(CACHE_DIR)) {
+  fs.mkdirSync(CACHE_DIR, { recursive: true });
+}
+
 
 // Initialize TTS provider
 TtsUniversal.init({
@@ -25,7 +34,7 @@ TtsUniversal.init({
 
   // Define the output directory
   const providerName = 'microsoft';
-  const outputDir = path.join('examples', providerName);
+  const outputDir = path.join('samples', providerName);
 
   // Create the output directory if it doesn't exist
   if (!fs.existsSync(outputDir)) {
